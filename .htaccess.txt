@@ -1,0 +1,20 @@
+# SPA Routing
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+
+# WASM MIME Type
+AddType application/wasm .wasm
+
+# Enable CORS for WASM files
+<FilesMatch "\.wasm$">
+    Header set Access-Control-Allow-Origin "*"
+</FilesMatch>
+
+# Cache control
+<FilesMatch "\.(js|css|wasm)$">
+    Header set Cache-Control "max-age=31536000, public"
+</FilesMatch>
