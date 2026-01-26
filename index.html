@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IFC Viewer & Audit | BIMSmarter</title>
+    <meta name="description" content="Visualiseur IFC et audit IDS en ligne - Vérifiez la conformité de vos maquettes BIM selon les standards buildingSMART. 100% gratuit, 100% local." />
+    <meta name="author" content="BIMSmarter" />
+    <meta name="keywords" content="IFC, Viewer, Audit, IDS, BIM, buildingSMART, Luxembourg, ISO 19650" />
+    
+    <!-- Favicon BIMSmarter -->
+    <link rel="icon" type="image/jpeg" href="/BIM_Smarter_faviconV2.jpg" />
+    <link rel="shortcut icon" type="image/jpeg" href="/BIM_Smarter_faviconV2.jpg" />
+    <link rel="apple-touch-icon" href="/BIM_Smarter_faviconV2.jpg" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="IFC Viewer & Audit | BIMSmarter" />
+    <meta property="og:description" content="Visualiseur IFC et audit IDS en ligne - 100% gratuit, 100% local" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://viewer.bimsmarter.eu" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyBzghrSLYAjcKYskfkrc7dbSX3DKm_rIEM",
+    authDomain: "auth.bimsmarter.eu", // Ton domaine pro
+    projectId: "bimsmarter",
+    storageBucket: "bimsmarter.firebasestorage.app",
+    messagingSenderId: "670432116296",
+    appId: "1:670432116296:web:38bac2f70ec706e914e27d"
+  };
+  // Initialisation sécurisée
+  if (!firebase.apps.length) firebase.initializeApp(firebaseConfig);
+  window.firebaseAuth = firebase.auth();
+</script>
+    <script type="module" crossorigin src="/assets/index-DfAKEyi6.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BTL7Qdwf.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
